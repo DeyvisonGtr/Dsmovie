@@ -1,5 +1,11 @@
 @import url ('https://fonts.googleapis.com/css2? família=Open+Sans:wght@300;400;700&display=swap');
 
+:root{
+    --bg-gray: #ddd;
+    --color-primary: #4D41C0;
+    --white: #fff;
+}
+
 
 *{
 box-sizing: border-box;
@@ -7,6 +13,9 @@ font-family: 'open sans', sans-serif;
 
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
 
 html, body{
     background-color: #ddd;
@@ -15,16 +24,39 @@ html, body{
 header {
     background-color: #4D41C0;
     color: #FFFFFF;
+    height: 60px;
+    display: flex;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+nav h1 {
+    front-size: 24px;
+    front-weigth: 700;
+
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 400;
 }
 
 a, a:hover {
     text-decoration: none;
     color: unset;
 
+}
+
+.dsmovie-contact-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.dsmovie-contact-container img {
+    margin-right: 10px;
 }
